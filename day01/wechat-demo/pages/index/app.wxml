@@ -1,0 +1,5 @@
+<view id="content">
+<image src="/imgaes/1.jpg" class="avatar"></image>
+<text>iphone6s手机就是好</text>
+<text class="btn">点我找到更多</text>
+</view>

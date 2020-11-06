@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/app"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ccc",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
+}
