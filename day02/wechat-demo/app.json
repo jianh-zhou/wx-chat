@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/index/app"
+    "pages/index/app",
+    "pages/log/log"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ccc",

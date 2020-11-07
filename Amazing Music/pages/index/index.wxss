@@ -1,0 +1,29 @@
+/* 轮播图 */
+.swiper-item-img{
+  width: 100%;
+  height: 200%;
+}
+/* 头部导航栏 */
+.index-nav-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.index-nav-container .iconfont{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+  font-size: 48rpx;
+  margin: 20rpx 0;
+  background-color: rgb(240, 19, 19);
+  text-align: center;
+  line-height: 100rpx;
+  color: white;
+}
+.index-nav-item{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  font-size: 28rpx
+  }

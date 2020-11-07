@@ -1,0 +1,2 @@
+/* 引入需要的字体图标样式 */
+@import '/static/iconfont/iconfont.wxss'

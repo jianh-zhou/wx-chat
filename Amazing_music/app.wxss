@@ -1,0 +1,2 @@
+/* \引入icon-font字体样式 */
+@import '/static/iconfont/iconfont.wxss'

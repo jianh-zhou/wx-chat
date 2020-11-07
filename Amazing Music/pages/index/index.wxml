@@ -1,0 +1,50 @@
+<view>
+<!-- 首页轮播图 -->
+  <swiper
+    class="swiper-header-nav"
+    indicator-color="ivory"
+    indicator-active-color="#d43c33"
+    circular
+    indicator-dots
+    >
+     <swiper-item class="swiper-header-item">
+      <image src="/images/nvsheng.jpg" class="swiper-item-img"></image>
+     </swiper-item>
+     <swiper-item class="swiper-header-item">
+      <image src="/images/nvsheng.jpg" class="swiper-item-img"></image>
+     </swiper-item>
+     <swiper-item class="swiper-header-item">
+      <image src="/images/nvsheng.jpg" class="swiper-item-img"></image>
+     </swiper-item>
+     <swiper-item class="swiper-header-item">
+      <image src="/images/nvsheng.jpg" class="swiper-item-img"></image>
+     </swiper-item>
+     <swiper-item class="swiper-header-item">
+      <image src="/images/nvsheng.jpg" class="swiper-item-img"></image>
+     </swiper-item>
+  </swiper>
+
+<!-- 功能导航栏 -->
+  <view class="index-nav-container">
+    <view class="index-nav-item">
+      <view class="iconfont icon-meirituijian-"></view>
+      <text>每日推荐</text>
+    </view>
+    <view class="index-nav-item">
+      <view class="iconfont icon-gedan1"></view>
+      <text>歌单</text>
+    </view>
+    <view class="index-nav-item">
+      <view class="iconfont icon-icon-ranking"></view>
+      <text>排行榜</text>
+    </view>
+    <view class="index-nav-item">
+      <view class="iconfont icon-diantai"></view>
+      <text>电台</text>
+    </view>
+    <view class="index-nav-item">
+      <view class="iconfont icon-zhiboguankanliangbofangsheyingshexiangjixianxing"></view>
+      <text>直播</text>
+    </view>
+  </view>
+</view>

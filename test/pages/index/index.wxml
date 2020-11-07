@@ -1,0 +1,6 @@
+<view class="container">
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">点我获取用户信息</button>
+<image></image>
+<text>我的用户名</text>
+<button></button>
+</view>

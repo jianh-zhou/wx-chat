@@ -1,0 +1,11 @@
+<view id="content">
+<image src="{{userInfo.avatarUrl}}" class="avatar" wx:if="{{userInfo.avatarUrl}}"></image>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo" wx:else >获取用户信息</button>
+<text>{{userInfo.nickName}}</text>
+<!-- <view  bindtouchend="handParent" class="parent">
+<text class="child" bindtouchend="handChild">{{msg}}</text>
+</view> -->
+<text class="btn">点我找到更多</text>
+<!-- <text class="child" bindtouchend="handNavigateTo" >点我进行测试navigateTo</text>
+<text class="child" bindtouchend="handRegirectTo" >点我进行测试redirectTo</text> -->
+</view>
