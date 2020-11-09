@@ -7,20 +7,12 @@
     circular
     indicator-dots
     >
-     <swiper-item class="swiper-header-item">
-      <image src="/images/nvsheng.jpg" class="swiper-item-img"></image>
-     </swiper-item>
-     <swiper-item class="swiper-header-item">
-      <image src="/images/nvsheng.jpg" class="swiper-item-img"></image>
-     </swiper-item>
-     <swiper-item class="swiper-header-item">
-      <image src="/images/nvsheng.jpg" class="swiper-item-img"></image>
-     </swiper-item>
-     <swiper-item class="swiper-header-item">
-      <image src="/images/nvsheng.jpg" class="swiper-item-img"></image>
-     </swiper-item>
-     <swiper-item class="swiper-header-item">
-      <image src="/images/nvsheng.jpg" class="swiper-item-img"></image>
+     <swiper-item
+      class="swiper-header-item" 
+      wx:for="{{banners}}"
+      wx:for-item="banner"
+      wx:key="bannerId">
+      <image src="{{banner.pic}}" class="swiper-item-img"></image>
      </swiper-item>
   </swiper>
 
@@ -43,8 +35,54 @@
       <text>电台</text>
     </view>
     <view class="index-nav-item">
-      <view class="iconfont icon-zhiboguankanliangbofangsheyingshexiangjixianxing"></view>
+      <view class="iconfont               icon-zhiboguankanliangbofangsheyingshexiangjixianxing"></view>
       <text>直播</text>
     </view>
   </view>
+
+  <!-- 歌曲推荐内容 -->
+     <!-- 歌单内容推荐头部 -->
+   <NavHeader title="推荐歌曲" titleContent="为您精心推荐" />
+  <view class="index-recommend-container">
+      <scroll-view class="recommend-music-list" scroll-x enable-flex >
+        <view 
+         class="recommend-music-item" 
+         wx:for="{{recommendMusicList}}"
+         wx:key="id">
+          <view class="recommend-music-img">
+            <image src="{{item.picUrl}}"></image>
+          </view>
+           <view class="recommend-music-title">
+           {{item.name}}
+          </view>
+        </view>
+        
+      </scroll-view>
+    </view>
+    
+    <!-- 歌单top榜 -->
+    <NavHeader title="排行榜" titleContent="热歌风向标" />
+    <swiper class="index-swiper-topList" next-margin="40rpx">
+      <swiper-item class="index-swiper-topItem" 
+      wx:for="{{topList}}"
+      wx:for-item="musicItem"
+      wx:for-index="musicIndex"
+      wx:key="musicIndex"
+      >
+        <view class="swiper-topItem-header">
+        {{musicItem.name}}
+        </view>
+        <view class="swiper-topItem-item">
+          <view class="topItem-item-item" 
+          wx:for="{{musicItem.tracks}}"
+          wx:ky="index"
+          >
+            <image src="{{item.al.picUrl}}"></image>
+            <view class="topItem-item-num">{{index+1}}</view>
+            <view>{{item.al.name}}</view>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+
 </view>

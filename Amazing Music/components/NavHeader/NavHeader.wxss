@@ -1,0 +1,19 @@
+.recommend-header{
+  padding: 40rpx 20rpx 10rpx;
+  overflow: hidden;
+}
+.recommend-music{
+  font-size: 28rpx;
+  color: #555;
+}
+.recommend-left{
+  float: left;
+
+}
+.recommend-right{
+  float: right;
+  font-size: 22rpx;
+  padding: 10rpx 20rpx;
+  border: 1rpx solid;
+  border-radius: 10rpx;
+}

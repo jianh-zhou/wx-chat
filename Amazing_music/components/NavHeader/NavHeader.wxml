@@ -1,0 +1,7 @@
+<view class="recommend-header">
+  <view class="recommennd-music">{{title}}</view>
+  <view class="recommend">
+    <view class="recommend-left">{{titleContent}}</view>
+    <view class="recommend-right">查看更多</view>
+  </view>
+</view>
