@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/video/video",
-    "pages/personly/personly"
+    "pages/personly/personly",
+    "pages/login/login",
+    "pages/index/index"   
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -11,27 +12,27 @@
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-      "color": "#333",
-      "selectedColor": "#d43c33",
+    "color": "#333",
+    "selectedColor": "#d43c33",
     "list": [
       {
-      "pagePath": "pages/index/index",
-      "text": "主页",
-      "iconPath": "/images/tabs/tab-home.png",
-      "selectedIconPath": "/images/tabs/tab-home-current.png"
-    },
-    {
-      "pagePath": "pages/video/video",
-      "text": "视频",
-      "iconPath": "/images/tabs/select.png",
-      "selectedIconPath": "/images/tabs/selected.png"
-    },
-    {
-      "pagePath": "pages/personly/personly",
-      "text": "个人中心",
-      "iconPath": "/images/tabs/tab-my.png",
-      "selectedIconPath": "/images/tabs/tab-my-current.png"
-    }
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/images/tabs/tab-home.png",
+        "selectedIconPath": "/images/tabs/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "/images/tabs/select.png",
+        "selectedIconPath": "/images/tabs/selected.png"
+      },
+      {
+        "pagePath": "pages/personly/personly",
+        "text": "个人中心",
+        "iconPath": "/images/tabs/tab-my.png",
+        "selectedIconPath": "/images/tabs/tab-my-current.png"
+      }
     ]
   },
   "style": "v2",

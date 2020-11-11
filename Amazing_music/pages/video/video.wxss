@@ -1,1 +1,121 @@
-/* pages/video/video.wxss */
+
+.videoContainer .header{
+  display: flex;
+  margin-top: 20rpx;
+}
+.videoContainer .header image{
+  width: 50rpx;
+  height: 50rpx;
+  padding: 0 10rpx;
+}
+.videoContainer .header input{
+  flex-grow: 1;
+  border:1rpx solid #aaa;
+  border-radius: 10rpx;
+  height: 50rpx;
+}
+.videoContainer .header .placeholder{
+  text-align: center;
+  color: red;
+  font-size: 26rpx
+}
+
+
+.videoContainer .navScroll{
+  display: flex;
+  height:100rpx;
+}
+
+.videoContainer .navScroll .navItem{
+  height:100rpx;
+  /* line-height:100rpx; */
+  /* margin:0 20rpx; */
+  padding:0 20rpx;
+  white-space:nowrap;
+}
+
+.videoContainer .navScroll .navItem text{
+  display:block;
+  line-height: 96rpx;
+  box-sizing: border-box;
+}
+
+.videoContainer .navScroll .navItem.active text{
+  border-bottom:4rpx solid red;
+}
+
+
+.videoList .common {
+  /* width: 100%; */
+  border-radius: 10rpx;
+    
+  width: 94vw;
+  height: 52.875vw;
+
+}
+
+.videoList .videoItem{
+  padding:3%;
+  padding-bottom:0;
+
+  /* height: calc (94vw * 1080 / 1920) */
+}
+
+
+.videoList{
+  padding-top:40rpx;
+  height: calc(100vh - 40rpx - 50rpx - 120rpx)
+}
+
+.videoList .content {
+  font-size: 26rpx;
+  height:80rpx;
+  line-height: 80rpx;
+  max-width: 500rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* footer */
+.footer {
+  border-top: 1rpx solid #eee;
+  padding: 20rpx 0;
+}
+.footer .avatar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.footer  .nickName {
+  font-size: 26rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+
+.footer .comments_praised {
+  float: right;
+}
+.comments_praised .btn {
+  display: inline;
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.comments_praised .btn:after {
+  border: none;
+}
+
+.comments_praised .item {
+  margin-left: 50rpx;
+  position: relative;
+}
+
+.comments_praised .item .count {
+  position: absolute;
+  top: -20rpx;
+  font-size: 20rpx;
+}
