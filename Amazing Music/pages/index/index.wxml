@@ -75,7 +75,7 @@
         <view class="swiper-topItem-item">
           <view class="topItem-item-item" 
           wx:for="{{musicItem.tracks}}"
-          wx:ky="index"
+          wx:key="{{Date.now()}}"
           >
             <image src="{{item.al.picUrl}}"></image>
             <view class="topItem-item-num">{{index+1}}</view>

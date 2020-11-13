@@ -22,7 +22,7 @@
 <!-- 导航栏 -->
   <view class="index-nav-container">
     <view class="index-nav-item">
-      <view class="iconfont icon-meirituijian-">
+      <view class="iconfont icon-meirituijian-" bindtap="toRecommend">
       </view>
       <text>每日推荐</text>
     </view>

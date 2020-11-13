@@ -1,0 +1,124 @@
+.song-container{
+  height: 100%;
+  background-color:rgba(0, 0, 0,.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.neddle{
+  width:192rpx;
+  height: 274rpx;
+  position: relative;
+  left: 54rpx;
+  top: -28rpx;
+  z-index: 9;
+  transform-origin:40rpx 0;
+  transition: transform 1s;
+  transform: rotateZ(-20deg)
+}
+.flag .neddle{
+  transform: rotateZ(0deg)
+}
+.mark{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  /* top:28rpx; */
+}
+.discContainer{
+  width:598rpx;
+  height: 598rpx;
+  position: relative;
+  top: -166rpx;
+  animation: rotation linear 4s infinite;
+  animation-play-state: paused;
+}
+.flag .discContainer{
+animation-play-state:running;
+}
+@keyframes rotation{
+  to{
+    transform: rotateZ(0deg)
+  }
+  from{
+  transform: rotateZ(360deg)
+  }
+}
+.dicImg{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 8
+}
+.songImg{
+  position: absolute;
+  top:0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  margin:auto;
+  z-index: 7;
+  width: 386rpx;
+  height: 386rpx;
+}
+
+
+/* musicControl */
+.musicControl {
+  position: absolute;
+  bottom: 40rpx;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1rpx solid #fff;
+}
+
+.musicControl text {
+  width: 20%;
+  text-align: center;
+  font-size: 50rpx;
+  color: #fff;
+  height: 120rpx;
+  line-height: 120rpx;
+}
+.musicControl text.big {
+  font-size: 80rpx;
+}
+
+.audioContainer{
+  position: absolute;
+  bottom:200rpx;
+  display:flex;
+  width:640rpx;
+  height:80rpx;
+  line-height:80rpx;
+}
+
+.audioContainer .barContainer{
+  width:450rpx;
+  height:4rpx;
+  background:rgba(0, 0, 0, 0.4);
+  margin:auto;
+}
+
+.audioContainer .barContainer .audio-current-time{
+  position: relative;
+  width:50%;
+  height:4rpx;
+  background:red;
+}
+
+.audioContainer .barContainer .audio-current-time .audio-time-point{
+  position: absolute;
+  top:-4rpx;
+  right:-6rpx;
+  width:12rpx;
+  height:12rpx;
+  border-radius: 50%;
+  background:white;
+}
+

@@ -1,2 +1,6 @@
 /* \引入icon-font字体样式 */
 @import '/static/iconfont/iconfont.wxss'
+/* 设置页面的高度 */
+page{
+  height : 100%
+}

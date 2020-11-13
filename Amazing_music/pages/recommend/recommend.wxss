@@ -1,0 +1,74 @@
+.recommend-header{
+  position: relative;
+}
+.recommend-header>image{
+  height: 300rpx;
+  width: 100%;
+}
+.recommend-header-date{
+  position: absolute;
+  font-size: 34rpx;
+  color: rgba(255, 255, 255, .8);
+  /* font-weight: 700; */
+  top:50%;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  
+}
+.recommend-header-day{
+  font-size: 40rpx;
+  padding: 0 8rpx;
+}
+
+.recommend-body{
+  position: relative;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  background-color: #fff;
+  /* margin:  */
+  top: -45rpx;
+  padding: 0 20rpx;
+}
+.recommend-card{
+  height: 100rpx;
+  line-height: 100rpx;
+  overflow: hidden;
+
+}
+.recommend-card-left{
+  float: left;
+}
+.recommend-card-right{
+  float: right;
+  font-size: 24rpx;
+}
+.recommend-music-List{
+  height: 786rpx;
+}
+.recommend-music-item{
+  overflow: hidden;
+ height: 80rpx;
+ margin-bottom: 30rpx;
+ 
+}
+.recommend-item-img{
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 10rpx;
+  float: left;
+}
+.musit-item-content{
+  float: left;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  font-size: 24rpx;
+  margin-left: 40rpx;
+  justify-content: space-around;
+}
+.icon-gengduo{
+  float: right;
+  height: 100%;
+  line-height: 80rpx;
+  font-size: 36rpx;
+}

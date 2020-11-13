@@ -1,0 +1,29 @@
+<view class="song-container {{isPlaying?'flag':''}}">
+<view>{{musicInfo.ar[0].name||111}}</view>
+  <view class="mark"></view>
+  <image src="/images/song/needle.png" class="neddle"></image>
+  <view class="discContainer">
+  <image src="/images/song/disc.png" class="dicImg"></image>
+  <image src="{{musicInfo.al.picUrl}}" class="songImg"></image>
+  </view>
+
+   <!-- 进度条 -->
+  <view class="audioContainer">
+    <text>{{filter.timeFilter(currentTime,'s')}}</text>
+    <view class="barContainer">
+      <view class="audio-current-time" style="width:{{currentWidth}}%">
+        <view class="audio-time-point"></view>
+      </view>
+    </view>
+    <text>{{filter.timeFilter(durationTime,'ms')}}</text>
+  </view>
+
+  <!-- 底部播放选项区域 -->
+  <view class="musicControl">
+    <text class="iconfont icon-iconsMusicyemianbofangmoshiShuffle" ></text>
+    <text class="iconfont icon-shangyishou" bindtap="switchSong" id="pre"></text>
+    <text class="iconfont {{isPlaying?'icon-zanting':'icon-bofang'}} big" bindtap="handlePlay"></text>
+    <text class="iconfont icon-next" bindtap="switchSong" id="next" ></text>
+    <text class="iconfont icon-iconsMusicyemianbofangmoshiPlayList"></text>
+  </view>
+</view>

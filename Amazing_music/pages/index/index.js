@@ -63,6 +63,13 @@ Page({
  
   },
 
+  // 点击每日推荐按钮,前往推荐页面
+  toRecommend(){
+    wx.navigateTo({
+      url: '/pages/recommend/recommend',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -34,6 +34,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    songId:'',//上一次播放音乐的id
+    playState:'',//保存上一次播放的状态
   }
 })

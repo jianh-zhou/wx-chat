@@ -3,7 +3,9 @@
     "pages/video/video",
     "pages/personly/personly",
     "pages/login/login",
-    "pages/index/index"   
+    "pages/index/index",
+    "pages/recomend/recomend",
+    "pages/song/song"
   ],
   "window": {
     "backgroundTextStyle": "light",

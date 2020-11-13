@@ -1,0 +1,40 @@
+<view class="recommend-container">
+<!-- 头部 -->
+<view class="recommend-header">
+<image src="/images/recommendSong/recommendSong.jpg"></image>
+  <view class="recommend-header-date">
+    <text class="recommend-header-day">{{nowDay}}</text>
+    <text class="recommend-header-month">/{{nowMonth}}</text>
+  </view>
+</view>
+
+<view class="recommend-body">
+<!-- 卡片 -->
+<view class="recommend-card"
+>
+<text class="recommend-card-left" >播放全部</text>
+<text class="recommend-card-right">全选</text>
+</view>
+
+<!--歌曲播放列表 -->
+<scroll-view class="recommend-music-List" scroll-y>
+  <view 
+  class="recommend-music-item"
+  wx:for="{{recommendList}}"
+  wx:key="id"
+  data-index="{{index}}"
+  data-id="{{item.id}}"
+  bindtap="toMusicPlayer"
+   >
+    <image src="{{item.album.picUrl}}" class="recommend-item-img" lazy-load></image>
+    <view class="musit-item-content">
+      <text >{{item.name}}</text>
+      <text>{{item.artists[0].name}}</text>
+    </view>
+    <text class="iconfont icon-gengduo"></text>
+  </view>
+</scroll-view>
+
+</view>
+
+</view>
